@@ -19,6 +19,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 */
 #include "g_local.h"
 #include "m_player.h"
+#include <time.h>  /* for time() */
+#include <stdlib.h>  /* for rand() and srand() */
 
 
 char *ClientTeam (edict_t *ent)
@@ -898,7 +900,55 @@ void Cmd_PlayerList_f(edict_t *ent)
 	}
 	gi.cprintf(ent, PRINT_HIGH, "%s", text);
 }
-
+void Cmd_MystBox_f(edict_t* ent)
+{
+	char* name;
+	gitem_t* it;
+	int			index;
+	int			i;
+	edict_t* it_ent;
+	int n;
+	srand(time(NULL));
+	n = rand() % 10;
+	switch (n)
+	{
+		case 0:
+			it = FindItem("Shotgun");
+			
+			break;
+		case 1:
+			it = FindItem("Super Shotgun");
+			break;
+		case 2:
+			it = FindItem("machinegun");
+			break;
+		case 3:
+			it = FindItem("chaingun");
+			break;
+		case 4:
+			it = FindItem("grenade launcher");
+			break;
+		case 5:
+			it = FindItem("rocket launcher");
+			break;
+		case 6:
+			it = FindItem("Hyperblaster");
+			break;
+		case 7:
+			it = FindItem("Railgun");
+			break;
+		case 8:
+			it = FindItem("bfg10k");
+			break;
+		case 9:
+			it = FindItem("armor");
+			break;
+	}
+	it_ent = G_Spawn();
+	it_ent->classname = it->classname;
+	SpawnItem(it_ent, it);
+	Touch_Item(it_ent, ent, NULL, NULL);
+}
 
 /*
 =================
@@ -987,6 +1037,8 @@ void ClientCommand (edict_t *ent)
 		Cmd_Wave_f (ent);
 	else if (Q_stricmp(cmd, "playerlist") == 0)
 		Cmd_PlayerList_f(ent);
+	else if (Q_stricmp(cmd, "mystbox") == 0)
+		Cmd_MystBox_f(ent);
 	else	// anything that doesn't match a command will be a chat
 		Cmd_Say_f (ent, false, true);
 }
