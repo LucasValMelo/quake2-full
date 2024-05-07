@@ -1,4 +1,28 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  p_weapon.c
+  g_cmds.c
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(36,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(59,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(60,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(724,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(727,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(810,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(811,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(812,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(823,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(830,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(877,7): warning C4459: declaration of 'st' hides global declaration
+  C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_local.h(456,21):
+  see declaration of 'st'
+  
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(899,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(887,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(895,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(907,8): warning C4101: 'index': unreferenced local variable
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(908,8): warning C4101: 'i': unreferenced local variable
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(923,8): warning C4101: 'name': unreferenced local variable
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(925,8): warning C4101: 'index': unreferenced local variable
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(926,8): warning C4101: 'i': unreferenced local variable
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(966): warning C4701: potentially uninitialized local variable 'it' used
+C:\Users\lucas\OneDrive\Área de Trabalho\NJIT\lv238-it266\Quake2\quake2-full\game\g_cmds.c(966): warning C4703: potentially uninitialized local pointer variable 'it' used
      Creating library .\..\release\gamex86.lib and object .\..\release\gamex86.exp
   game.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\Quake 2\modded\gamex86.dll
