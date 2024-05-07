@@ -900,6 +900,24 @@ void Cmd_PlayerList_f(edict_t *ent)
 	}
 	gi.cprintf(ent, PRINT_HIGH, "%s", text);
 }
+void Cmd_Perk_f(edict_t* ent)
+{
+	char* name;
+	gitem_t* it;
+	int			index;
+	int			i;
+	edict_t* it_ent;
+
+	name = gi.args();
+	if (Q_stricmp(name, "jugg") == 0)
+	{
+		it = FindItem("armor");
+		it_ent = G_Spawn();
+		it_ent->classname = it->classname;
+		SpawnItem(it_ent, it);
+		Touch_Item(it_ent, ent, NULL, NULL);
+	}
+}
 void Cmd_MystBox_f(edict_t* ent)
 {
 	char* name;
@@ -1039,6 +1057,8 @@ void ClientCommand (edict_t *ent)
 		Cmd_PlayerList_f(ent);
 	else if (Q_stricmp(cmd, "mystbox") == 0)
 		Cmd_MystBox_f(ent);
+	else if (Q_stricmp(cmd, "perk") == 0)
+		Cmd_Perk_f(ent);
 	else	// anything that doesn't match a command will be a chat
 		Cmd_Say_f (ent, false, true);
 }
